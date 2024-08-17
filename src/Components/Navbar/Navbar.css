@@ -1,0 +1,116 @@
+/* Navigation bar styling */
+nav {
+    padding: 10px 2%;
+    /* Padding around the navigation bar */
+    justify-content: space-between;
+    /* Space between navigation items */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Shadow effect for the navigation bar */
+    background: #fff;
+    /* White background for the navigation bar */
+    position: sticky;
+    /* Sticky positioning to keep the nav fixed at the top */
+    top: 0;
+    /* Top edge of the navigation bar */
+    z-index: 10;
+    /* Z-index to ensure the navigation bar stays above other content */
+}
+
+/* Styling for the left section of the navigation bar */
+.nav-lest .menu_icon {
+    width: 22px;
+    /* Width of the menu icon */
+    margin-right: 25px;
+    /* Margin to the right of the menu icon */
+}
+
+/* Styling for the logo in the left section */
+.nav-lest .logo {
+    width: 130px;
+    /* Width of the logo image */
+}
+
+/* Styling for the search box in the middle section */
+.nav-middle .search-box {
+    border: 1px solid #ccc;
+    /* Border for the search box */
+    margin-right: 15px;
+    /* Margin to the right of the search box */
+    padding: 8px 22px;
+    /* Padding inside the search box */
+    border-radius: 25px;
+    /* Rounded corners for the search box */
+}
+
+/* Styling for the input field within the search box */
+.nav-middle .search-box input {
+    width: 440px;
+    /* Width of the input field */
+    border: 0;
+    /* Remove border */
+    outline: 0;
+    /* Remove outline */
+    background: transparent;
+    /* Transparent background */
+}
+
+/* Styling for the search icon within the search box */
+.nav-middle .search-box img {
+    width: 15px;
+    /* Width of the search icon */
+}
+
+/* Styling for the right section icons in the navigation bar */
+.nav-right img {
+    width: 25px;
+    /* Width of each icon */
+    margin-right: 25px;
+    /* Margin to the right of each icon */
+}
+
+/* Styling for the user profile icon in the right section */
+.nav-right .user-icon {
+    width: 35px;
+    /* Width of the user icon */
+    border-radius: 50%;
+    /* Circular shape */
+}
+
+/* Media query for screen widths 900px or less */
+@media (max-width: 900px) {
+
+    /* Hide menu icon in the left section */
+    .nav-left .menu_icon {
+        display: none;
+    }
+
+    /* Hide all right section icons */
+    .nav-right img {
+        display: none;
+    }
+
+    /* Display only user icon in the right section with adjusted width */
+    .nav-right .user-icon {
+        display: block;
+        width: 30px;
+    }
+
+    /* Adjust logo size in the left section */
+    .nav-left .logo {
+        width: 90px;
+    }
+
+    /* Adjust input field width in the search box */
+    .nav-middle .search-box input {
+        width: 100px;
+    }
+}
+
+/* Media query for screen widths 900px or less */
+@media (max-width: 900px) {
+
+    /* Hide sidebar on smaller screens */
+    .sidebar {
+        display: none;
+    }
+}

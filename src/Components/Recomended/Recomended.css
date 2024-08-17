@@ -1,0 +1,39 @@
+.recomended {
+    flex-basis: 30%;
+    /* Sets the width of the recommended section to 30% of its container */
+}
+
+.side-video-list {
+    display: flex;
+    /* Uses flexbox to layout items in a row */
+    justify-content: space-between;
+    /* Distributes space between items */
+    margin-bottom: 8px;
+    /* Adds spacing below each video item */
+}
+
+.side-video-list img {
+    flex-basis: 49%;
+    /* Sets the basis size of the image to 49% of the container's width */
+    width: 50%;
+    /* Ensures the image occupies 50% of the container's width */
+}
+
+.vid-info {
+    flex-basis: 49%;
+    /* Sets the basis size of the video info to 49% of the container's width */
+}
+
+.vid-info h4 {
+    font-size: 13px;
+    /* Sets the font size of the video title */
+    margin-bottom: 5px;
+    /* Adds spacing below the title */
+}
+
+@media (max-width: 900px) {
+    .recomended {
+        flex-basis: 100%;
+        /* Sets the width of the recommended section to 100% for small screens */
+    }
+}

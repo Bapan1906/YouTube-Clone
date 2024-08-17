@@ -1,0 +1,59 @@
+/* Container styling */
+.container {
+    background: #f9f9f9;
+    /* Light gray background color */
+    padding-left: 17%;
+    /* Left padding for main container */
+    padding-right: 2%;
+    /* Right padding for main container */
+    padding-top: 20px;
+    /* Top padding for main container */
+    padding-bottom: 20px;
+    /* Bottom padding for main container */
+}
+
+/* Styling for larger container when sidebar is not open */
+.largr-container {
+    padding-left: 7px;
+    /* Adjusted left padding for larger container */
+}
+
+/* Media query for screens 900px and below */
+@media (max-width: 900px) {
+
+    .container,
+    .largr-container {
+        padding-left: 5%;
+        /* Reduced left padding */
+        padding-right: 5%;
+        /* Reduced right padding */
+    }
+}
+
+/* Media query for screens 600px and below */
+@media (max-width: 600px) {
+
+    .container,
+    .largr-container {
+        padding-left: 3%;
+        /* Further reduced left padding */
+        padding-right: 3%;
+        /* Further reduced right padding */
+    }
+}
+
+/* Media query for screens 400px and below */
+@media (max-width: 400px) {
+
+    .container,
+    .largr-container {
+        padding-left: 2%;
+        /* Minimal left padding */
+        padding-right: 2%;
+        /* Minimal right padding */
+        padding-top: 15px;
+        /* Reduced top padding */
+        padding-bottom: 15px;
+        /* Reduced bottom padding */
+    }
+}

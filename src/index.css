@@ -1,0 +1,30 @@
+/* Apply a global reset for margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* Set a default font for the entire application */
+}
+
+/* Remove underlines from links and set default text color */
+a {
+  text-decoration: none;
+  /* Remove default underline from links */
+  color: #5a5a5a;
+  /* Set the text color of links */
+}
+
+/* Set cursor style for images */
+img {
+  cursor: pointer;
+  /* Change cursor to pointer when hovering over images */
+}
+
+/* Flexbox container for aligning items */
+.flex-div {
+  display: flex;
+  /* Use flexbox layout */
+  align-items: center;
+  /* Align items vertically centered */
+}

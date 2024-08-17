@@ -1,0 +1,177 @@
+/* Sidebar styling */
+.sidebar {
+    background: #fff;
+    width: 15%;
+    /* Sidebar width */
+    height: 100vh;
+    /* Full viewport height */
+    position: fixed;
+    /* Fixed position to stay on the screen */
+    top: 0;
+    left: 0;
+    padding-left: 2%;
+    /* Padding from the left edge */
+    padding-top: 80px;
+    /* Padding from the top */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* Shadow effect on the right side */
+    overflow-y: auto;
+    /* Scroll if content overflows */
+    transition: width 0.3s;
+    /* Smooth transition for width change */
+}
+
+/* Shortcut links styling */
+.shortcut-links img {
+    width: 20px;
+    /* Icon size */
+    margin-left: 20px;
+    /* Space between icon and text */
+}
+
+/* Sidebar links styling */
+.side-links,
+.side-links2 {
+    display: flex;
+    /* Flexbox layout */
+    align-items: center;
+    /* Center items vertically */
+    margin-bottom: 20px;
+    /* Space below each link */
+    width: fit-content;
+    /* Width adjusts to content */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    gap: 0.6rem;
+    /* Space between icon and text */
+    font-size: 0.7rem;
+    /* Font size for links */
+}
+
+/* Horizontal rule styling */
+.sidebar hr {
+    border: 0;
+    /* Remove default border */
+    height: 1px;
+    /* Thin horizontal line */
+    background: #ccc;
+    /* Light grey color */
+    width: 85%;
+    /* Line width */
+    margin: 0 auto;
+    /* Center the line */
+}
+
+/* Subscribed list styling */
+.subscribed-list h3 {
+    font-size: 13px;
+    /* Font size for header */
+    margin: 20px 0;
+    /* Space above and below header */
+    color: #5a5a5a;
+    /* Text color */
+}
+
+.subscribed-list img {
+    width: 25px;
+    /* Size of profile images */
+    border-radius: 50%;
+    /* Circular images */
+    margin-right: 20px;
+    /* Space between image and text */
+}
+
+/* Small Sidebar styling */
+.small-Sidebar {
+    width: 5%;
+    /* Width when sidebar is minimized */
+}
+
+.small-Sidebar p {
+    display: none;
+    /* Hide text when minimized */
+}
+
+.small-Sidebar img {
+    margin-left: 0;
+    /* No left margin for icons */
+}
+
+.small-Sidebar h3 {
+    display: none;
+    /* Hide header when minimized */
+}
+
+.small-Sidebar hr {
+    width: 50%;
+    /* Narrower line when minimized */
+    margin-bottom: 25px;
+    /* Space below the line */
+}
+
+/* Active link styling */
+.side-links.active img {
+    padding-bottom: 2px;
+    /* Space below the icon */
+    border-bottom: 3px solid red;
+    /* Red underline for active link */
+}
+
+/* Media query for responsive design */
+@media (max-width: 900px) {
+    .sidebar {
+        width: 25%;
+        /* Wider sidebar for medium screens */
+    }
+
+    .small-Sidebar {
+        width: 10%;
+        /* Slightly wider minimized sidebar */
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 50%;
+        /* Sidebar width for smaller screens */
+    }
+
+    .small-Sidebar {
+        width: 15%;
+        /* Minimized sidebar width for smaller screens */
+    }
+
+    .side-links,
+    .side-links2 {
+        font-size: 0.6rem;
+        /* Smaller font size */
+    }
+
+    .subscribed-list img {
+        width: 20px;
+        /* Smaller profile images */
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 70%;
+        /* Sidebar width for very small screens */
+    }
+
+    .small-Sidebar {
+        width: 20%;
+        /* Minimized sidebar width for very small screens */
+    }
+
+    .side-links,
+    .side-links2 {
+        font-size: 0.5rem;
+        /* Even smaller font size */
+    }
+
+    .subscribed-list img {
+        width: 18px;
+        /* Smaller profile images */
+    }
+}

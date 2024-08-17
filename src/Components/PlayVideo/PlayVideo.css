@@ -1,0 +1,242 @@
+.play-video {
+    flex-basis: 69%;
+    /* Sets the flex-basis of the play-video container to 69% */
+}
+
+.play-video iframe {
+    width: 100%;
+    /* Makes the iframe take the full width of its container */
+    height: 37vw;
+    /* Sets the height of the iframe to 37% of the viewport width */
+}
+
+.play-video h3 {
+    margin-top: 10px;
+    /* Adds margin to the top of the h3 element */
+    font-weight: 600;
+    /* Sets the font weight of the h3 element */
+    font-size: 22px;
+    /* Sets the font size of the h3 element */
+}
+
+.play-video-info {
+    display: flex;
+    /* Uses flexbox for layout */
+    align-items: center;
+    /* Aligns items vertically centered */
+    justify-content: space-between;
+    /* Distributes space between items */
+    flex-wrap: wrap;
+    /* Allows items to wrap onto multiple lines */
+    margin-top: 10px;
+    /* Adds margin to the top of the play-video-info container */
+    font-size: 14px;
+    /* Sets the font size of the play-video-info text */
+    color: #5a5a5a;
+    /* Sets the text color */
+}
+
+.play-video-info img {
+    width: 20px;
+    /* Sets the width of images inside play-video-info */
+    margin-right: 8px;
+    /* Adds margin to the right of the images */
+}
+
+.play-video-info span {
+    display: inline-flex;
+    /* Uses inline-flex for layout within spans */
+    align-items: center;
+    /* Aligns items vertically centered within spans */
+    margin-left: 15px;
+    /* Adds margin to the left of the spans */
+}
+
+.play-video hr {
+    border: 0;
+    /* Removes default border */
+    height: 1px;
+    /* Sets the height of the horizontal rule */
+    background: #ccc;
+    /* Sets the background color of the horizontal rule */
+    margin: 10px 0;
+    /* Adds margin above and below the horizontal rule */
+}
+
+.publisher {
+    display: flex;
+    /* Uses flexbox for layout */
+    align-items: center;
+    /* Aligns items vertically centered */
+    margin-top: 20px;
+    /* Adds margin to the top of the publisher container */
+}
+
+.publisher div {
+    display: flex;
+    /* Uses flexbox for layout */
+    flex-direction: column;
+    /* Arranges items in a column within the div */
+    line-height: 18px;
+    /* Sets the line height */
+}
+
+.publisher img {
+    width: 40px;
+    /* Sets the width of the publisher image */
+    border-radius: 50%;
+    /* Makes the image circular */
+    margin-right: 15px;
+    /* Adds margin to the right of the image */
+}
+
+.publisher div p {
+    color: #000;
+    /* Sets the text color of the publisher name */
+    font-weight: 600;
+    /* Sets the font weight of the publisher name */
+    font-size: 18px;
+    /* Sets the font size of the publisher name */
+}
+
+.publisher span {
+    font-size: 13px;
+    /* Sets the font size of the subscriber count */
+    color: #5a5a5a;
+    /* Sets the text color of the subscriber count */
+}
+
+.publisher button {
+    background: red;
+    /* Sets the background color of the subscribe button */
+    color: #fff;
+    /* Sets the text color of the subscribe button */
+    padding: 8px 30px;
+    /* Adds padding inside the button */
+    border: 0;
+    /* Removes border */
+    outline: 0;
+    /* Removes outline */
+    border-radius: 20px;
+    /* Rounds the corners of the button */
+    cursor: pointer;
+    /* Changes cursor to pointer on hover */
+    margin-left: auto;
+    /* Pushes the button to the rightmost side */
+}
+
+.vid-description {
+    padding-left: 55px;
+    /* Adds padding to the left of the vid-description container */
+    margin: 15px 0;
+    /* Adds margin above and below the vid-description container */
+}
+
+.vid-description p {
+    font-size: 14px;
+    /* Sets the font size of the paragraph text */
+    margin-bottom: 5px;
+    /* Adds margin to the bottom of the paragraph text */
+    color: #5a5a5a;
+    /* Sets the text color of the paragraph */
+}
+
+.vid-description h4 {
+    font-size: 14px;
+    /* Sets the font size of the h4 text */
+    color: #5a5a5a;
+    /* Sets the text color of the h4 text */
+    margin-top: 15px;
+    /* Adds margin to the top of the h4 text */
+}
+
+.comment {
+    display: flex;
+    /* Uses flexbox for layout */
+    align-items: flex-start;
+    /* Aligns items to the start of the flex container */
+    margin: 20px 0;
+    /* Adds margin above and below the comment container */
+}
+
+.comment img {
+    width: 35px;
+    /* Sets the width of the comment image */
+    border-radius: 50%;
+    /* Makes the comment image circular */
+    margin-right: 15px;
+    /* Adds margin to the right of the image */
+}
+
+.comment h3 {
+    font-size: 14px;
+    /* Sets the font size of the comment author name */
+    margin-bottom: 2px;
+    /* Adds margin to the bottom of the comment author name */
+}
+
+.comment h3 span {
+    font-size: 12px;
+    /* Sets the font size of the comment timestamp */
+    color: #5a5a5a;
+    /* Sets the text color of the comment timestamp */
+    font-weight: 500;
+    /* Sets the font weight of the comment timestamp */
+    margin-left: 8px;
+    /* Adds margin to the left of the comment timestamp */
+}
+
+.comment-action {
+    display: flex;
+    /* Uses flexbox for layout */
+    align-items: center;
+    /* Aligns items vertically centered */
+    margin: 8px 0;
+    /* Adds margin above and below the comment action container */
+    font-size: 14px;
+    /* Sets the font size of the comment action text */
+}
+
+.comment-action img {
+    border-radius: 0;
+    /* Removes border radius from comment action images */
+    width: 20px;
+    /* Sets the width of the comment action images */
+    margin-right: 5px;
+    /* Adds margin to the right of the comment action images */
+}
+
+.comment-action span {
+    margin-right: 20px;
+    /* Adds margin to the right of the comment action text */
+    color: #5a5a5a;
+    /* Sets the text color of the comment action text */
+}
+
+@media (max-width: 900px) {
+    .play-video {
+        flex-basis: 100%;
+        /* Sets the flex-basis to 100% on smaller screens */
+    }
+
+    .play-video iframe {
+        width: 100%;
+        /* Makes the iframe take the full width on smaller screens */
+        height: 50vw;
+        /* Sets the height of the iframe to 50% of the viewport width */
+    }
+
+    .vid-description {
+        padding-left: 0;
+        /* Removes left padding on smaller screens */
+    }
+
+    .play-video-info span {
+        margin-left: 0;
+        /* Removes left margin from play-video-info spans */
+        margin-right: 15px;
+        /* Sets right margin of play-video-info spans */
+        margin-top: 15px;
+        /* Adds top margin to play-video-info spans */
+    }
+}
